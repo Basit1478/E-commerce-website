@@ -1,8 +1,13 @@
+"use client";
 
-
-import React from 'react';
+import React, { useState } from "react";
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
   
   return (
 <>
@@ -242,54 +247,56 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-white">
           <div className="px-2 pt-2 pb-3 space-y-1">
-            <a
-              href="/"
-              className="block px-3 py-2 rounded-md text-base font-medium hover:text-orange-600"
-            >
-              Home
-            </a>
-            <a
-              href="/about"
-              className="block px-3 py-2 rounded-md text-base font-medium hover:text-orange-600"
-            >
-              About
-            </a>
-            <a
-              href="/blogs"
-              className="block px-3 py-2 rounded-md text-base font-medium hover:text-orange-600"
-            >
-              Blogs
-            </a>
-            <a
-              href="/new"
-              className="block px-3 py-2 rounded-md text-base font-medium hover:text-orange-600"
-            >
-             New
-            </a>
-            <a
-              href="/latest"
-              className="block px-3 py-2 rounded-md text-base font-medium hover:text-orange-600"
-            >
-              Latest
-            </a>
-            <a
-              href="/informative"
-              className="block px-3 py-2 rounded-md text-base font-medium hover:text-orange-600"
-            >
-            Informative
-            </a>
-            <a
-              href="/authors"
-              className="block px-3 py-2 rounded-md text-base font-medium hover:text-orange-600"
-            >
-              Authors
-            </a>
-            <a
-              href="/contact"
-              className="block px-3 py-2 rounded-md text-base font-medium hover:text-orange-600"
-            >
-              Contact
-            </a>
+             className="sticky top-0 z-50 mb-8 w-full mt-2 bg-white h-[66px] xl:gap-x-11 md:gap-x-8 text-[#726E8D] text-[16px] hidden md:flex justify-center items-center ">
+    <a
+      className="hover:text-[#5a526c] border-b-2 border-transparent hover:border-[#5a526c] pb-1"
+      href="/"
+    >
+      Home
+    </a>
+    <a
+      className="hover:text-[#5a526c] border-b-2 border-transparent hover:border-[#5a526c] pb-1"
+      href="/products"
+    >
+      All Products
+    </a>
+    <a
+      className="hover:text-[#5a526c] border-b-2 border-transparent hover:border-[#5a526c] pb-1"
+      href="/about-us"
+    >
+      About Us
+    </a>
+    <a
+      className="hover:text-[#5a526c] border-b-2 border-transparent hover:border-[#5a526c] pb-1"
+      href="#ceramics"
+    >
+      Ceramics
+    </a>
+    <a
+      className="hover:text-[#5a526c] border-b-2 border-transparent hover:border-[#5a526c] pb-1"
+      href="#tables"
+    >
+      Tables
+    </a>
+    <a
+      className="hover:text-[#5a526c] border-b-2 border-transparent hover:border-[#5a526c] pb-1"
+      href="#chairs"
+    >
+      Chairs
+    </a>
+    <a
+      className="hover:text-[#5a526c] border-b-2 border-transparent hover:border-[#5a526c] pb-1"
+      href="#tableware"
+    >
+      Tableware
+    </a>
+    <a
+      className="hover:text-[#5a526c] border-b-2 border-transparent hover:border-[#5a526c] pb-1"
+      href="#cutlery"
+    >
+      Cutlery
+    </a>
+                
             
             
               
