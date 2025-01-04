@@ -2,7 +2,7 @@
 import { useState } from "react";
 import React from "react";
 import Link from "next/link";
-const Page = () => {
+const page = () => {
    const [isOpen, setIsOpen] = useState(false);
       
         const toggleMenu = () => {
