@@ -2,7 +2,7 @@
  
 import Hero from "@/components/Hero";
 import Features from "@/components/Features";
-import Ceremics from "@/components/Ceremics";
+import Ceramics from "@/components/Ceramics";
 import Products from "@/components/Products";
 import Sign from "@/components/Sign";
 import New from "@/components/New";
@@ -22,7 +22,7 @@ export default function Home() {
   <Navbar/>
        <Hero/>
        <Features/>
-        <Ceremics/>
+        <Ceramics/>
        <Products/> 
         <Sign/> 
   <New/>
