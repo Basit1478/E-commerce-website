@@ -39,12 +39,7 @@ const Card = () => {
     <div className="flex w-full justify-center gap-5 flex-wrap">
         {data.map((val, ind) => (
           <Link key={ind} href="/products/1">
-            <Card
-              image={val.image}
-              name={val.name}
-              price={val.price}
-              size={val.size}
-            />
+           
           </Link>
         ))}
       </div>
