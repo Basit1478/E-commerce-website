@@ -30,13 +30,14 @@ const data: CardType[] = [
   },
   { name: "The Lucy Lamp", price: "£399", size: "single", image: "/lamp.png" },
 ];
-const Ceramics = ({ heading }: { heading?: string }) => {
+const Card = () => {
+ 
   return (
-    <div className="w-full text-darkPrimary flex flex-col gap-6 my-16 mmd:px-10 px-5">
-      <h2 className="xs:text-3xl text-2xl font-clash">
-        {heading ? heading : "New ceramics"}
-      </h2>
-      <div className="flex w-full justify-center gap-5 flex-wrap">
+     <div className="w-full text-darkPrimary flex flex-col gap-6 my-16 mmd:px-10 px-5">
+    <h1 className="xs:text-3xl text-2xl font-clash">
+      New ceramics
+    </h1>
+    <div className="flex w-full justify-center gap-5 flex-wrap">
         {data.map((val, ind) => (
           <Link key={ind} href="/products/1">
             <Card
@@ -58,5 +59,4 @@ const Ceramics = ({ heading }: { heading?: string }) => {
     </div>
   );
 };
-
-export default Ceramics;
+export default Card;
