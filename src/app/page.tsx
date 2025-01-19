@@ -2,7 +2,7 @@
  
 import Hero from "@/components/Hero";
 import Features from "@/components/Features";
-import Card from "@/components/Ceremics";
+import Ceremics from "@/components/Ceremics";
 import Products from "@/components/Products";
 import Sign from "@/components/Sign";
 import New from "@/components/New";
